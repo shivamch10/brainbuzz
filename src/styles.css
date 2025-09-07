@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Custom Components */
+@layer components {
+  .card {
+    @apply bg-gray-900 text-white p-6 rounded-2xl shadow-lg border border-gray-700;
+  }
+
+  .input {
+    @apply bg-gray-800 text-white placeholder-gray-400 px-4 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 transition;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-xl shadow-md hover:from-pink-600 hover:to-purple-700 transition;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent border border-gray-600 text-gray-300 px-4 py-2 rounded-xl hover:bg-gray-700 transition;
+  }
+}
