@@ -25,7 +25,4 @@ It uses the **Open Trivia DB API** to fetch real-time quiz questions and provide
 
 ---
 
-## 📦 Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/bakularora/react-brainbuzz-final.git
+
